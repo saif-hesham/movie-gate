@@ -2,6 +2,7 @@
   --nav-color: #dbeef5;
   --primary-font: #252525;
   --secondry-font: #474747;
+  --tertiary-font: #686868;
 }
 
 body {
@@ -31,20 +32,22 @@ nav {
   height: 50 vh;
   background-color: #f7e5d0;
 }
-.release {
-  align-self: flex-start;
-}
-.date {
-  align-self: flex-end;
-}
+
 .card p {
   margin: 20px 0;
-  color: var(--primary-font);
+  color: var(--tertiary-font);
 }
+
+.buttons {
+  display: flex;
+  min-width: 80%;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 1055px) {
   .buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .buttons a {
     margin-bottom: 10px;
